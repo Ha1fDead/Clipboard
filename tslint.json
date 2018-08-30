@@ -1,0 +1,58 @@
+{
+    "extends": "tslint:latest",
+    "rules": {
+        "class-name": true,
+        "indent": [
+            true,
+            "tabs"
+        ],
+        "max-line-length": {
+            "options": [
+                160
+            ]
+        },
+        "member-ordering": [
+            true,
+            {
+                "order": [
+                    "public-static-field",
+                    "public-instance-field",
+                    "private-static-field",
+                    "private-instance-field",
+                    "public-constructor",
+                    "private-constructor",
+                    "public-instance-method",
+                    "protected-instance-method",
+                    "private-instance-method"
+                ],
+                "alphabetize": true
+            }
+        ],
+        "new-parens": true,
+        "no-arg": true,
+        "no-bitwise": true,
+        "no-conditional-assignment": true,
+        "no-consecutive-blank-lines": false,
+        "no-console": {
+            "severity": "warning",
+            "options": [
+                "debug",
+                "info",
+                "log",
+                "time",
+                "timeEnd",
+                "trace"
+            ]
+        },
+        
+        // default setting of tslint. I don't like it because its arbitrary and, in conjunction with max length, causes me some headaches.
+        "no-trailing-whitespace": false
+    },
+    "jsRules": {
+        "max-line-length": {
+            "options": [
+                160
+            ]
+        }
+    }
+}
