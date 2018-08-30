@@ -6,7 +6,7 @@ import { ClipboardStore } from "./clipboardstore.js";
 /**
  * Responsible for handling browser-level Clipboard Events, and drilling them down into actionable elements
  */
-export default class ClipboardManager {
+export class ClipboardManager {
 	constructor(private selectionManager: IClipboardSelectionManager, private clipboardStore: ClipboardStore) {
 		document.documentElement.oncut = this.OnCut.bind(this);
 		document.documentElement.onpaste = this.OnPaste.bind(this);
