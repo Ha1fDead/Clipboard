@@ -2,7 +2,7 @@ import { ClipboardDict } from "./clipboarddict.js";
 /**
  * Responsible for handling browser-level Clipboard Events, and drilling them down into actionable elements
  */
-export default class ClipboardManager {
+export class ClipboardManager {
     constructor(selectionManager, clipboardStore) {
         this.selectionManager = selectionManager;
         this.clipboardStore = clipboardStore;
